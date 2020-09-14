@@ -1,7 +1,7 @@
 {
   "name": "heroku-buildpack-static",
   "description": "LINE LIFF Vue3 template",
-  "repository": "https://github.com/louis70109/announcer-vue",
+  "repository": "https://github.com/louis70109/vue-liff-shareTargetPicker",
   "keywords": ["LINE", "vue", "static"],
   "buildpacks": [
     {
