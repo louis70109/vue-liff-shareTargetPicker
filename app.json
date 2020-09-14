@@ -1,14 +1,14 @@
 {
-  "name": "heroku-buildpack-static",
-  "description": "LINE LIFF Vue3 template",
+  "name": "heroku-buildpack-nodejs",
+  "description": "LINE LIFF nodejs template",
   "repository": "https://github.com/louis70109/vue-liff-shareTargetPicker",
-  "keywords": ["LINE", "vue", "static"],
+  "keywords": ["LINE", "express", "nodejs", "static"],
   "buildpacks": [
     {
-      "url": "heroku/nodejs"
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
     },
     {
-      "url": "https://github.com/heroku/heroku-buildpack-static.git"
+      "url": "heroku/nodejs"
     }
   ]
 }
