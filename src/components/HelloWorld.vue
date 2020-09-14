@@ -15,11 +15,11 @@ export default {
     onMounted(async () => {
       try {
         await liff.init({
-          liffId: process.env.SHARE_ID
+          liffId: process.env.VUE_APP_SHARE_ID,
         });
         if (!liff.isLoggedIn())
           liff.login({
-            redirectUri: window.location.href
+            redirectUri: window.location.href,
           });
       } catch (err) {
         console.log(`liff.state init error ${err}`);
@@ -28,7 +28,7 @@ export default {
     async function sendTargetPicker() {
       if (!liff.isLoggedIn()) {
         liff.login({
-          redirectUri: window.location.href
+          redirectUri: window.location.href,
         });
       }
       if (liff.isApiAvailable("shareTargetPicker")) {
